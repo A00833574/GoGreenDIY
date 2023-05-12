@@ -329,3 +329,33 @@
     .testimonial-author {
       font-weight: bold;
     }
+
+    /* Estilos de la sección de contacto */
+    .contact-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+    }
+
+    .contact-item i {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+
+    .social-media {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .social-media a {
+      display: inline-block;
+      font-size: 24px;
+      color: #333;
+      margin: 0 10px;
+    }
