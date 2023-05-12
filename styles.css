@@ -33,13 +33,13 @@
       display: inline-block;
       margin-right: 10px;
       padding: 10px;
-      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
       border-radius: 5px;
-      background-color: var(--verde);
+      background-color: var(--verde-claro);
     }
 
     nav ul li:hover {
-      background-color: var(--verde-claro);
+      background-color: white;
     }
 
     nav ul li a {
@@ -53,11 +53,12 @@
       position: absolute;
       background-color: var(--verde-claro);
       min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      ;
     }
 
-    .dropdown:hover .dropdown-content{
+    .dropdown:hover .dropdown-content {
       display: block;
     }
 
@@ -72,15 +73,109 @@
       background-color: var(--verde);
     }
 
+    /* Estilos del carrusel */
+    .carousel-container {
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .carousel-slide {
+      display: flex;
+      width: 100%;
+    }
+
+    .carousel-image {
+      flex: 1 0 100%;
+      width: 75%;
+      height: 582px;
+      object-fit: fill;
+    }
+
+    /* Estilos de los botones de navegación */
+    .carousel-nav {
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .carousel-prev,
+    .carousel-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      background-color: var(--verde);
+      border-radius: 50%;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .carousel-prev:hover,
+    .carousel-next:hover {
+      background-color: var(--verde-claro);
+    }
+
+    .carousel-prev {
+      left: 20px;
+    }
+
+    .carousel-next {
+      right: 20px;
+    }
+
+    /* Estilos de los Indicadores */
+    .carousel-indicators {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+      z-index: 1;
+    }
+
+    .carousel-indicator {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #ccc;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+
+    .carousel-indicator.active {
+      background-color: #2ecc71;
+    }
+
     /* Estilos del contenido principal */
     main {
       padding: 20px;
     }
 
+    h2 {
+      color: var(--verde);
+    }
+
+    p {
+      margin-bottom: 1em;
+    }
+
     /* Estilos del pie de página */
     footer {
-      background-color: #2ecc71;
+      background-color: var(--verde-claro);
       padding: 20px;
       color: white;
       text-align: center;
+    }
+
+    footer .social-media {
+      size: 10%;
     }
