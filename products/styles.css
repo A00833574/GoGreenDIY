@@ -1,0 +1,274 @@
+    :root {
+        --verde: #6f8e74;
+        --verde-claro: #c4d5c5;
+    }
+
+    /* Estilos del encabezado */
+    header {
+        background-color: #6f8e74;
+        padding: 20px;
+        color: white;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    nav ul {
+        margin: 0;
+        padding-top: 1rem;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 10px;
+        padding: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        background-color: var(--verde-claro);
+    }
+
+    nav ul li:hover {
+        background-color: white;
+    }
+
+    nav ul li a {
+        color: black;
+        text-decoration: none;
+    }
+
+    /* Estilos del menú desplegable */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: var(--verde-claro);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        ;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: var(--verde);
+    }
+
+    /* Estilos del pie de página */
+    footer {
+        background-color: var(--verde-claro);
+        padding: 20px;
+        color: white;
+        text-align: center;
+    }
+
+    footer .footer-container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-left: 10%;
+    }
+
+    footer .footer-container .social-media {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin-right: 10%;
+    }
+
+    footer .footer-container .social-media a {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1em;
+        text-decoration: none;
+        color: black;
+    }
+
+    footer .footer-container .social-media a:hover {
+        color: white;
+    }
+
+    footer .site-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    footer .site-links a {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1em;
+        text-decoration: none;
+        color: black;
+    }
+
+    footer .site-links a:hover {
+        color: white;
+    }
+
+    /* Carrusel de imágenes */
+
+    .carousel-container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        margin-top: 1rem;
+    }
+
+    .carousel-slide {
+        display: flex;
+        width: 400%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .carousel-slide img {
+        width: 25%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* Estilos de los botones de navegación */
+    .carousel-nav {
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .carousel-prev,
+    .carousel-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        cursor: pointer;
+        background-color: var(--verde);
+    }
+
+    .carousel-prev:hover,
+    .carousel-next:hover {
+        background-color: var(--verde-claro);
+    }
+
+    .carousel-prev {
+        left: 20px;
+    }
+
+    .carousel-next {
+        right: 20px;
+    }
+
+    /* Estilos generales */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    /* Estilos del carousel */
+    .carousel-container {
+        position: relative;
+        width: 512px;
+        overflow: hidden;
+        margin-left: 4rem;
+    }
+
+    .carousel-slide {
+        display: flex;
+        width: 100%;
+    }
+
+    .carousel-slide img {
+        flex: 0 0 auto;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .carousel-prev,
+    .carousel-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        color: #000;
+        font-size: 24px;
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer;
+    }
+
+    .carousel-prev {
+        left: 20px;
+    }
+
+    .carousel-next {
+        right: 20px;
+    }
+
+    /* Estilos de la sección de producto */
+    .product-section {
+        display: flex;
+    }
+
+    .product-images {
+        flex: 1;
+    }
+
+    .product-details {
+        flex: 1;
+        padding: 0 20px;
+    }
+
+    .product-details h2 {
+        font-size: 24px;
+        margin-top: 1rem;
+    }
+
+    .product-description {
+        margin-top: 10px;
+    }
+
+    .product-price {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+    .add-to-cart {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .add-to-cart:hover {
+        background-color: #0056b3;
+    }
