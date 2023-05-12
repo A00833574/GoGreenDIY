@@ -7,14 +7,8 @@
     <title>Go Green - DIY</title>
     <!-- Aquí puedes enlazar tus archivos CSS para personalizar el estilo -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         crossorigin="anonymous" />
-
-
 </head>
 
 <body>
@@ -25,7 +19,7 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li class="dropdown">
-                    <a href="diys.html">DIYs</a>
+                    <a href="#productos">DIYs</a>
                     <div class="dropdown-content">
                         <a href="#productos1">Composta</a>
                         <a href="#productos2">Pala</a>
@@ -38,22 +32,38 @@
             </ul>
         </nav>
     </header>
-    <div class="carousel-container">
-        <div class="carousel-slide">
-            <img class="carousel-image"
-                src="https://coolwallpapers.me/picsup/6031032-grass-environment-rime-bright-fresh-garden-green-ground-macro-nature-rural-season.jpg"
-                alt="Imagen 1">
-            <img class="carousel-image" src="https://wallpapercave.com/wp/wp4538158.jpg" alt="Imagen 2">
-            <img class="carousel-image" src="https://wallpaperaccess.com/full/776489.jpg" alt="Imagen 3">
+
+    <!-- Contenido principal -->
+    <section id="productos">
+        <h2>Proyectos</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="https://o.remove.bg/downloads/b448e1a4-7dfc-4a26-9837-b5c96ffb67aa/image-removebg-preview.png" alt="Producto 1">
+                <h3>Composta Casera</h3>
+                <p>Todo lo que necesitas para hacer tu composta en casa</p>
+                <a href="#">Ver Mas</a>
+            </div>
+            <div class="product-card">
+                <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/4056/sand-shovel-clipart-md.png" alt="Producto 2">
+                <h3>Palita</h3>
+                <p>El complemento perfecto para tus labores en el jardín</p>
+                <a href="#">Ver Mas</a>
+            </div>
+            <div class="product-card">
+                <img src="https://i.pinimg.com/originals/f8/79/c0/f879c08f56f4844d7bd2fc5b0fb9a56c.png" alt="Producto 3">
+                <h3>Regilete</h3>
+                <p>Un divertido y hermoso articulo para tu jardín</p>
+                <a href="#">Ver Mas</a>
+            </div>
+            <!-- <div class="product-card">
+                <img src="product4.jpg" alt="Producto 4">
+                <h3>Producto 4</h3>
+                <p>Descripción breve del producto 4.</p>
+                <a href="#">Comprar</a>
+            </div> -->
         </div>
-        <div class="carousel-indicators">
-            <div class="carousel-indicator"></div>
-            <div class="carousel-indicator"></div>
-            <div class="carousel-indicator"></div>
-        </div>
-        <div class="carousel-prev">&#10094;</div>
-        <div class="carousel-next">&#10095;</div>
-    </div>
+    </section>
+
 
 </body>
 
@@ -66,14 +76,12 @@
         </div>
         <div class="site-links">
             <a href="index.html">Inicio</a>
-            <a href="diys.html">DIYs</a>
+            <a href="#diys">DIYs</a>
             <a href="#testimonios">Testimonios</a>
             <a href="about.html">Acerca de nosotros</a>
             <a href="#contacto">Contacto</a>
         </div>
     </div>
 </footer>
-
-<script src="carousel.js"></script>
 
 </html>
